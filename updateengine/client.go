@@ -36,7 +36,7 @@ const (
 // Client is a dbus client subscribed to updateengine status updates
 type Client struct {
 	conn   *dbus.Conn
-	object *dbus.Object
+	object dbus.BusObject
 	ch     chan *dbus.Signal
 }
 
